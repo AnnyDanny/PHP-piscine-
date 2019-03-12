@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<title>calc</title>
+	 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+            <link rel="stylesheet" type="text/css">
+		<script>
+			function calc(first1, second2, operator)
+			{
+				var res;
+				var num1;
+				var num2;
+				num1 = parseInt(first1);
+				num2 = parseInt(second2);
+				if (num1 >= 0 && num2 >= 0 && first1 !== "" && second2 !== "")
+				{
+					if ((operator === '/' || operator === '%') && num2 === 0)
+						res = "It’s over 9000!";
+					else if (operator === '+')
+						res = num1 + num2;
+					else if (operator === '-')
+						res = num1 - num2;
+					else if (operator === '*')
+						res = num1 * num2;
+					else if (operator === '/')
+						res = num1 / num2;
+					else if (operator === '%')
+						res = num1 % num2;
+				}
+				else
+				{
+					res = "Error!!!";
+				}
+				console.log(res);
+				alert(res);
+			}
+			setInterval(function() 
+			{
+  				popUp()
+  			}, 30000);
+			function popUp() 
+			{
+			  var popup = document.createElement('div');
+			  popup.id = "popup";
+			  popup = "Please, use me...";
+			  alert(popup);
+			  document.body.appendChild(popup);
+			  setTimeout(function()
+			  {
+			  document.body.removeChild(document.getElementById('popup'))
+			  }, 30000);
+			}
+		</script>
+</head>
+<body>
+	<div>
+	<form>
+		<input type="text" name="input1" id="first1">
+		<select id="operator">
+			<option>+</option>
+			<option>-</option>
+			<option>*</option>
+			<option>/</option>
+			<option>%</option>
+		</select>
+		<input type="text" name="input2" id="second2">
+		<input type="submit" name="submit" id="Try me!" onclick="calc(first1.value, second2.value, operator.value)">
+	</form>
+	<hr>
+	</div>
+</body>
+</html>

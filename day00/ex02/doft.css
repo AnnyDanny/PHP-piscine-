@@ -1,0 +1,185 @@
+body {
+	    border-color:#c8a2c8;
+	    background:  #606060;
+	}
+	.back1{
+		position:absolute;
+		background: #909090;
+		width: 1422px;
+		height: 140px;
+		margin-left: 227px;
+	    margin-right: 101px;
+	    margin-top: 8px;
+		border-radius: 0.5em;
+		box-shadow: 16px 16px 16px black;
+	}
+	.loupe{
+		float:right;
+		height:150px;
+		width:250px;
+		margin-right: 35px;
+		margin-top: 10px;
+	} 
+	.reload{
+		position:absolute;
+		height:20px;
+		width:20px;
+		left: 1390px;
+		top:11px;
+	}
+	.close{
+		position:absolute;
+		height:20px;
+		width:20px;
+		left: 1390px;
+		top:110px;
+	}
+	.day_of_the_42 {
+		position:absolute;
+		width:430px;
+		height:120px;
+		left: 6px;
+		bottom: 12px;
+	}
+
+	.back2{
+		position:absolute;
+		border-color:#c8a2c8;
+		background: #909090;
+		width:140px;
+		height:425px;
+		margin-left: 255px;
+	    margin-top: 166px;
+		border-radius: 0.5em;
+		box-shadow: 16px 16px 16px black;
+	}
+	.arrow {
+		position:absolute;
+		width:70px;
+		height:70px;
+		top:18px;
+		left:30px;
+	}
+	.main {
+		position:absolute;
+		width:70px;
+		height:70px;
+		top:98px;
+		left:30px;
+	}
+	.oeil {
+		position:absolute;
+		width:70px;
+		height:70px;
+		top:170px;
+		left:30px;
+		border: 3px solid #FF0000;
+		border-width: 3px;
+	}
+	.outil {
+		position:absolute;
+		width:70px;
+		height:70px;
+		top:250px;
+		left:30px;
+	}
+	.chat-icon {
+		position:absolute;
+		width:70px;
+		height:70px;
+		top: 330px;
+		left:30px;
+	}
+	.back3{
+		position:absolute;
+		border-color:#c8a2c8;
+		background: #909090;
+		width:140px;
+		height:425px;
+		margin-left: 1475px;
+	    margin-top: 166px;
+		border-radius: 0.5em;
+		box-shadow: 16px 16px 16px black;
+	}
+	.book {
+		position:absolute;
+		width:70px;
+		height:90px;
+		top:17px;
+		left:34px;
+	}
+	.towel {
+		position:absolute;
+		width:74px;
+		height:70px;
+		top: 115px;
+		left:30px;
+	}
+	.brick {
+		position:absolute;
+		background-image: url(resources/brick.jpg);
+		background-position: center bottom;
+		background-repeat: repeat;
+  		width: 120px;
+  		height: 70px;
+  		top: 178px;
+		left:10px;
+	}
+	.back4{
+		position:absolute;
+		border-color:#c8a2c8;
+		background: #909090;
+		width:1025px;
+		height:580px;
+		margin-left: 420px;
+	    margin-top: 166px;
+		border-radius: 0.5em;
+		box-shadow: 16px 16px 16px black;
+	}
+	.cluster {
+		position:absolute;
+		width:1009px;
+		height:560px;
+		top: 9px;
+		left:8px;
+	}
+	.green{
+		position:absolute;
+		border-color:#c8a2c8;
+		background: #82FF82;
+		width:520px;
+		height:165px;
+		left: 185px;
+		top: 682px;
+		right: 660;
+		border-radius: 0.5em;
+		box-shadow: 16px 16px 16px black;
+	}
+	input {
+		position:absolute;
+		top: 85px;
+		left: 14px;
+		box-shadow: 16px white;
+	}
+	button {
+		position:absolute;
+		top: 85px;
+		left: 404px;
+		box-shadow: 16px white;
+	}
+	p {
+		margin-left: 10px;
+		margin-top: 4px;
+		font-size: 14pt;
+		font-family: Georgia;
+	}
+	.a{
+		font-size: 26pt;
+		font-family: Georgia;
+	}
+	.b {
+		font-style: italic;
+	}
+	.c {
+		 text-shadow:30px 10px 4px red;
+	}

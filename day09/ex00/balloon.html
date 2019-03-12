@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<style>
+		.a {
+			background-color: red;
+			width: 200px;
+			height: 200px;
+			border-radius: 100px;
+		}
+	</style>
+	<body>
+		<script type="text/javascript">
+			function vika()
+			{
+				var element = document.getElementById('1');
+				var width = parseInt(element.style.width);
+				var height = parseInt(element.style.height);
+				var borderRadius = parseInt(element.style.borderRadius);
+				element.style.width = width + 10 + "px";
+				element.style.height = height + 10 + "px";
+				element.style.borderRadius = borderRadius + 5 + "px";
+				if (element.style.backgroundColor == "red")
+					element.style.backgroundColor = "green";
+				else if (element.style.backgroundColor == "green")
+					element.style.backgroundColor = "blue";
+				else if (element.style.backgroundColor == "blue")
+					element.style.backgroundColor = "red";
+				if (element.style.width == 430 + "px" || element.style.height == 430 + "px")
+				{
+					element.style.width = 200 + "px";
+					element.style.height = 200 + "px";
+				}
+				console.log(height);
+			}
+        	function OnMouseOut(element) {
+        		if ((element.style.width != 200 + "px") || (element.style.height != 200 + "px"))
+        		{
+        			element.style.width = (parseInt(element.style.width, 10) - 5) + "px";
+        			element.style.height = (parseInt(element.style.height, 10) - 5) + "px";
+        			if (element.style.backgroundColor == "red")
+						element.style.backgroundColor = "green";
+					else if (element.style.backgroundColor == "green")
+						element.style.backgroundColor = "blue";
+					else if (element.style.backgroundColor == "blue")
+						element.style.backgroundColor = "red";
+        		}
+        	}
+		</script>
+	<div id="1" style="background-color: red;
+			width: 200px; height: 200px;
+			border-radius: 100px;" onclick="vika()"; onmouseout="OnMouseOut(this)">
+	</div>
+	</body>
+</html>
